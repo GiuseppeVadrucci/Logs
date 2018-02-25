@@ -12,8 +12,8 @@ def follow(thefile):
 import string
 ip = ''
 
-file1 = open("/../../nginx/access.log","r")
-file2 = open("/../log.txt","w")
+file1 = open("nginx/access.log","r")
+file2 = open("log.txt","w")
 while True:
 
 	for line in follow(file1):
