@@ -1,4 +1,6 @@
+import string
 import time
+
 def follow(thefile):
     thefile.seek(0,2)
     while True:
@@ -8,8 +10,7 @@ def follow(thefile):
             continue
         yield line
 
-
-import string
+#ip you do not want to log
 ip = ''
 
 file1 = open("nginx/access.log","r")
